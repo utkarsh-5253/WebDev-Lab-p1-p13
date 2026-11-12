@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox and Grid</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            background-color: black;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+
+            padding: 20px;
+        }
+
+        .card {
+            border: 2px solid black;
+            padding: 20px;
+
+            flex: 1;
+        }
+
+        .content {
+            display: grid;
+
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto;
+
+            gap: 20px;
+
+            padding: 20px;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+
+    </nav>
+
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h2>Card 1</h2>
+
+            <p>
+                First card.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Card 2</h2>
+
+            <p>
+                Second card.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>Card 3</h2>
+
+            <p>
+             Third card.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="content">
+
+        <div class="box">
+
+            <h2>About</h2>
+
+            <p>
+                This is the about section.
+            </p>
+
+        </div>
+
+
+        <div class="box">
+
+            <h2>Latest News</h2>
+
+            <p>
+                This is the latest news section.
+            </p>
+
+        </div>
+
+
+        <div class="box">
+
+            <h2>Skills</h2>
+
+            <p>
+                HTML, CSS and Java.
+            </p>
+
+        </div>
+
+
+        <div class="box">
+
+            <h2>Projects</h2>
+
+            <p>
+                My recent projects are listed here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

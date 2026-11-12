@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Design System</title>
+
+    <style>
+
+        :root {
+            --main-color: black;
+            --text-color: #333333;
+            --background-color: white;
+
+            --font-family: Arial, sans-serif;
+
+            --small-size: 14px;
+            --normal-size: 16px;
+            --large-size: 24px;
+            --heading-size: 32px;
+
+            --normal-weight: 400;
+            --bold-weight: 700;
+
+            --line-height: 1.5;
+
+            --space-small: 10px;
+            --space-medium: 20px;
+            --space-large: 30px;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--normal-size);
+            line-height: var(--line-height);
+            color: var(--text-color);
+            background-color: var(--background-color);
+
+            margin: var(--space-large);
+        }
+
+
+        h1 {
+            font-size: var(--heading-size);
+            font-weight: var(--bold-weight);
+            color: var(--main-color);
+        }
+
+        h2 {
+            font-size: var(--large-size);
+            font-weight: var(--bold-weight);
+            color: var(--main-color);
+        }
+
+        p {
+            font-size: var(--normal-size);
+            font-weight: var(--normal-weight);
+            line-height: var(--line-height);
+
+            margin-bottom: var(--space-medium);
+        }
+
+        button {
+            font-family: var(--font-family);
+            font-size: var(--normal-size);
+            font-weight: var(--bold-weight);
+
+            padding: var(--space-small) var(--space-medium);
+
+            background-color: var(--main-color);
+            color: white;
+
+            border: none;
+        }
+
+        .card {
+            padding: var(--space-medium);
+            margin-top: var(--space-medium);
+
+            border: 1px solid black;
+        }
+
+        .card h3 {
+            font-size: var(--large-size);
+            font-weight: var(--bold-weight);
+        }
+
+        .card p {
+            font-size: var(--normal-size);
+            line-height: var(--line-height);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>My Webpage</h1>
+
+    <p>
+        This webpage uses a simple CSS design system.
+    </p>
+
+
+    <div class="card">
+
+        <h3>My Card</h3>
+
+        <p>
+            This is an example of a card.
+        </p>
+
+        <button>Learn More</button>
+
+    </div>
+
+</body>
+
+</html>

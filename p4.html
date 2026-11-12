@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Navbar and Card</title>
+
+    <style>
+
+        nav {
+            background-color: black;
+            padding: 15px;
+
+            /* Keeps navbar visible while scrolling */
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+
+        .card {
+            width: 300px;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+
+        .overlay {
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+
+            background-color: black;
+            color: white;
+
+            padding: 10px;
+
+            box-sizing: border-box;
+        }
+
+        .overlay h2 {
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <div class="content">
+
+        <h1>My Webpage</h1>
+
+        <p>
+            Scroll down to see that the navigation bar
+            remains visible at the top.
+        </p>
+
+        <div class="card">
+
+            <img src="example image.avif" alt="example image">
+
+            <div class="overlay">
+                <h2>My Card</h2>
+                <p>This text is placed over the image.</p>
+            </div>
+
+
+</body>
+
+</html>

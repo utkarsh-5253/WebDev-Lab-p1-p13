@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 50px;
+            min-height: 400px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+
+            padding: 30px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            gap: 30px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .footer-section {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .footer-section h3 {
+            margin-top: 0;
+        }
+
+        .footer-section p {
+            line-height: 1.5;
+        }
+
+
+        .social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social a {
+            color: white;
+            text-decoration: none;
+        }
+  
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            footer {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <header>
+
+
+        <div class="logo">
+            Utkarsh
+        </div>
+
+        <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Projects</a>
+
+            <a href="#">Skills</a>
+
+            <a href="#">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <h1>Welcome to My Portfolio</h1>
+  
+        <p>
+            My name is Utkarsh Chaudhary.
+            I am a student at BST
+        </p>
+
+        <p>
+            I enjoy coding, building projects and
+            learning new technologies.
+        </p>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-section">
+
+         <p>© 2026 Utkarsh Chaudhary</p>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>Contact</h3>
+
+            <p>Email: utkarsh11933@gmail.com</p>
+
+            <p>Phone: +91 8400119807</p>
+
+        </div>
+
+
+        <div class="footer-section">
+
+            <h3>Social Media</h3>
+
+            <div class="social">
+
+                <a href="https://github.com/utkarsh-5253">GitHub</a>
+
+                <a href="https://www.linkedin.com/in/utkarsh-chaudhary-13a7593bb/">LinkedIn</a>
+
+                <a href="https://www.instagram.com/utk_arsh.16/">Instagram</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-section">
+
+            <h3>Quick Links</h3>
+
+            <p>Home</p>
+
+            <p>Projects</p>
+
+            <p>Contact</p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
+

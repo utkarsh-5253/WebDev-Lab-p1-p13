@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Projects</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        .projects {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+
+            gap: 20px;
+
+            margin-top: 30px;
+        }
+
+        .card {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        .project1 {
+            grid-column: span 2;
+        }
+
+        .project2 {
+            grid-row: span 2;
+        }
+
+        .project4 {
+            grid-column: span 2;
+        }
+
+
+        @media (max-width: 700px) {
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .project1,
+            .project2,
+            .project4 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <h1>My Projects</h1>
+
+
+    <div class="projects">
+
+
+        <div class="card project1">
+
+            <h2>Huslerz</h2>
+
+            <p>
+                Huslerz is a student-focused platform
+                that helps students find local service
+                providers for everyday problems.
+            </p>
+
+        </div>
+
+        <div class="card project2">
+
+            <h2>Portfolio Website</h2>
+
+            <p>
+                A personal portfolio website created
+                using HTML and CSS.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Calculator</h2>
+
+            <p>
+                A simple calculator project created
+                using Java.
+            </p>
+
+        </div>
+
+        <div class="card project4">
+
+            <h2>College Website</h2>
+
+            <p>
+                A simple college website created
+                using semantic HTML elements.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>News Website</h2>
+
+            <p>
+                A newspaper-style webpage created
+                using CSS Grid.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
